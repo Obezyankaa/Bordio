@@ -1,7 +1,10 @@
 import styled, { keyframes } from 'styled-components';
 
-const Title = styled.h1`
-color: red;
+const Title = styled.div`
+color: white;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
 `;
 const TitleTwo = styled(Title)`
     background-color: aqua;
