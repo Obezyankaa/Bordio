@@ -1,4 +1,60 @@
+/* eslint-disable import/prefer-default-export */
 import styled, { keyframes } from 'styled-components';
+
+export const Navbar = styled.div`
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 220px;
+    background: rgb(15, 29, 64);
+    z-index: 2;
+`;
+
+export const NavBarContainer = styled.div`
+    padding: 26px 18px 18px 26px;
+`;
+
+export const NavBarLogo = styled.div`
+    
+`;
+
+export const FormSearch = styled.form`
+ position: relative;
+  margin: 0 auto;
+`;
+
+export const InputSearch = styled.input.attrs((props) => ({
+  type: 'search',
+}))`
+ outline: none;
+  background: transparent;
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+  border: none;
+`;
+
+export const ButtonSearch = styled.button.attrs((props) => ({
+  type: 'submit',
+}))`& {
+ border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+&:before {
+    content: "\f002";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: #F9F0DA;
+  }
+
+  
+`;
 
 const Title = styled.div`
 color: white;
@@ -6,6 +62,7 @@ font-weight: 400;
 font-size: 14px;
 line-height: 20px;
 `;
+
 const TitleTwo = styled(Title)`
     background-color: aqua;
 `;
@@ -48,6 +105,6 @@ const BlockTwo = styled.div`
 `;
 
 // eslint-disable-next-line import/prefer-default-export
-export {
-  Title, BlockOneTest, BlockTwo, TitleTwo, MainBlock, AnimeTitle,
-};
+// export {
+//   Title, BlockOneTest, BlockTwo, TitleTwo, MainBlock, AnimeTitle,
+// };
