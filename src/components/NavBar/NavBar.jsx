@@ -12,13 +12,15 @@ import {
   ListTask,
   ListTaskHeading,
   TastBlock,
-} from '../Style/Style';
+  IconArrow,
+} from './Style';
 
 export default function NavBar() {
-  const [isShown, setIsShown] = useState(true);
+  const [isShown, setIsShown] = useState(false);
+  const [isShownTwo, setIsShownTwo] = useState(false);
 
   const toggleFIeldset = () => setIsShown(!isShown);
-
+  const toggleFIeldsetTwo = () => setIsShownTwo(!isShownTwo);
   return (
     <Navbar>
       <NavBarContainer>
@@ -58,14 +60,32 @@ export default function NavBar() {
         </ProfilSpan>
       </ProfilNavbar>
       <ListTask>
-        <ListTaskHeading onClick={toggleFIeldset}>Favorites</ListTaskHeading>
+        <ListTaskHeading onClick={toggleFIeldset}>
+          {' '}
+          <IconArrow />
+          Favorites
+        </ListTaskHeading>
         {isShown ? (
           <>
             <TastBlock>Marketing</TastBlock>
             <TastBlock>Mobile App</TastBlock>
           </>
         ) : (null)}
+        <ListTaskHeading onClick={toggleFIeldsetTwo}>
+          {' '}
+          <IconArrow />
+          My Projects
 
+        </ListTaskHeading>
+        {isShownTwo ? (
+          <>
+            <TastBlock>Marketing</TastBlock>
+            <TastBlock>Landing Pages</TastBlock>
+            <TastBlock>Wedding</TastBlock>
+            <TastBlock>Mobile App</TastBlock>
+            <TastBlock>House Construction</TastBlock>
+          </>
+        ) : (null)}
       </ListTask>
     </Navbar>
   );
