@@ -1,5 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 import styled, { keyframes } from 'styled-components';
+import img from './img/ProfilPhoto.png';
 
 export const Navbar = styled.div`
     position: absolute;
@@ -7,22 +8,22 @@ export const Navbar = styled.div`
     top: 0px;
     bottom: 0px;
     width: 220px;
-    background: rgb(15, 29, 64);
+    background: #0F1D40;
     z-index: 2;
 `;
 
 export const NavBarContainer = styled.div`
-    padding: 26px 18px 18px 26px;
+    padding: 16px 16px;
 `;
 
 export const NavBarLogo = styled.div`
-    
+    cursor: pointer;
 `;
 
 export const FormSearch = styled.form`
  position: relative;
   margin: 0 auto;
-  background-color: rgb(46,59,114);
+  background-color: #2D4071;
   margin-top: 30px;
   border-radius: 4px;
 
@@ -35,7 +36,7 @@ export const InputSearch = styled.input.attrs((props) => ({
   background: transparent;
   width: 100%;
   font-size: 14px;
-  height: 42px;
+  height: 40px;
   padding-left: 15px;
   border: none;
 `;
@@ -55,58 +56,90 @@ export const ButtonSearch = styled.button.attrs((props) => ({
 }
 &:before {
   font-size: 16px;
-  }
-
-  
+  }  
 `;
 
-const Title = styled.div`
-color: white;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-`;
+export const ProfilNavbar = styled.div`
+    background-color: #2D4071;
+    padding: 13px 10px 13px 16px;`;
 
-const TitleTwo = styled(Title)`
-    background-color: aqua;
-`;
-
-const pulse = keyframes`
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-`;
-
-const AnimeTitle = styled(TitleTwo)`
-    animation: 3s ${pulse} infinite alternate;
-`;
-
-const MainBlock = styled.div`
+export const ProfilSpan = styled.div`
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-`;
-
-const BlockOneTest = styled.div`
-    display: flex;
-    justify-content: center;
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    border-radius: 1rem;
     align-items: center;
 `;
 
-const BlockTwo = styled.div`
-    display: block;
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    border-radius: 1rem;
+export const ProfilPhoto = styled.span`
+    background: url(${img}) no-repeat; 
+    width: 25px;
+    height: 25px;
+    overflow: hidden;
+    display: inline-flex;
+    flex-shrink: 0;
+    margin-right: 10px;
 `;
+
+export const ListTask = styled.div`
+    padding: 20px 16px;
+`;
+
+export const ListTaskHeading = styled.div`
+    font-size: 14px;
+    cursor: pointer;
+`;
+
+export const TastBlock = styled.div`
+    padding: 20px 0px;
+    font-size: 14px;
+    color: #8C939F;
+`;
+
+// const Title = styled.div`
+// color: white;
+// font-weight: 400;
+// font-size: 14px;
+// line-height: 20px;
+// `;
+
+// const TitleTwo = styled(Title)`
+//     background-color: aqua;
+// `;
+
+// const pulse = keyframes`
+//     from {
+//         opacity: 0.1;
+//     }
+//     to {
+//         opacity: 1;
+//     }
+// `;
+
+// const AnimeTitle = styled(TitleTwo)`
+//     animation: 3s ${pulse} infinite alternate;
+// `;
+
+// const MainBlock = styled.div`
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+// `;
+
+// const BlockOneTest = styled.div`
+//     display: flex;
+//     justify-content: center;
+//     width: 300px;
+//     height: 300px;
+//     background-color: white;
+//     border-radius: 1rem;
+//     align-items: center;
+// `;
+
+// const BlockTwo = styled.div`
+//     display: block;
+//     width: 200px;
+//     height: 200px;
+//     background-color: black;
+//     border-radius: 1rem;
+// `;
 
 // eslint-disable-next-line import/prefer-default-export
 // export {

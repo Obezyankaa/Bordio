@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
-  Navbar, NavBarContainer, NavBarLogo, FormSearch, InputSearch, ButtonSearch
+  Navbar,
+  NavBarContainer,
+  NavBarLogo,
+  FormSearch,
+  InputSearch,
+  ButtonSearch,
+  ProfilNavbar,
+  ProfilSpan,
+  ProfilPhoto,
+  ListTask,
+  ListTaskHeading,
+  TastBlock,
 } from '../Style/Style';
 
 export default function NavBar() {
+  const [isShown, setIsShown] = useState(true);
+
+  const toggleFIeldset = () => setIsShown(!isShown);
+
   return (
     <Navbar>
       <NavBarContainer>
@@ -36,6 +51,22 @@ export default function NavBar() {
           </ButtonSearch>
         </FormSearch>
       </NavBarContainer>
+      <ProfilNavbar>
+        <ProfilSpan>
+          <ProfilPhoto />
+          My workspace
+        </ProfilSpan>
+      </ProfilNavbar>
+      <ListTask>
+        <ListTaskHeading onClick={toggleFIeldset}>Favorites</ListTaskHeading>
+        {isShown ? (
+          <>
+            <TastBlock>Marketing</TastBlock>
+            <TastBlock>Mobile App</TastBlock>
+          </>
+        ) : (null)}
+
+      </ListTask>
     </Navbar>
   );
 }
