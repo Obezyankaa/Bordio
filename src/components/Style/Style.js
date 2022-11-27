@@ -22,6 +22,10 @@ export const NavBarLogo = styled.div`
 export const FormSearch = styled.form`
  position: relative;
   margin: 0 auto;
+  background-color: rgb(46,59,114);
+  margin-top: 30px;
+  border-radius: 4px;
+
 `;
 
 export const InputSearch = styled.input.attrs((props) => ({
@@ -30,6 +34,7 @@ export const InputSearch = styled.input.attrs((props) => ({
  outline: none;
   background: transparent;
   width: 100%;
+  font-size: 14px;
   height: 42px;
   padding-left: 15px;
   border: none;
@@ -45,12 +50,11 @@ export const ButtonSearch = styled.button.attrs((props) => ({
   top: 0;
   right: 0;
   cursor: pointer;
+  background-color: transparent;
+
 }
 &:before {
-    content: "\f002";
-  font-family: FontAwesome;
   font-size: 16px;
-  color: #F9F0DA;
   }
 
   
