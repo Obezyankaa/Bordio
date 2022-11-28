@@ -6,6 +6,7 @@ export default function Main() {
   return (
     <MainContainer>
       <Header />
+      <h1>привет</h1>
     </MainContainer>
   );
 }
