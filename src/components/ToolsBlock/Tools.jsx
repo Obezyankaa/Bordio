@@ -5,7 +5,11 @@ import {
   ToolsSelectBlock,
   ToolsSelectText,
   BlockTest,
-  ToolsSelectIcon
+  ToolsSelectIcon,
+  ToolsSelectIconTwo,
+  ToolsSelectIconThree,
+  ToolsSelectIconFour,
+  ToolsSelectIconFive
 } from './Style';
 
 export default function Tools() {
@@ -20,20 +24,20 @@ export default function Tools() {
           <ToolsSelectText>Roadmap</ToolsSelectText>
         </ToolsSelectBlock>
         <ToolsSelectBlock>
-          <ToolsSelectIcon />
-          <ToolsSelectText>Roadmap</ToolsSelectText>
+          <ToolsSelectIconTwo />
+          <ToolsSelectText>Schedule</ToolsSelectText>
         </ToolsSelectBlock>
         <ToolsSelectBlock>
-          <ToolsSelectIcon />
-          <ToolsSelectText>Roadmap</ToolsSelectText>
+          <ToolsSelectIconThree />
+          <ToolsSelectText>Tasks</ToolsSelectText>
         </ToolsSelectBlock>
         <ToolsSelectBlock>
-          <ToolsSelectIcon />
-          <ToolsSelectText>Roadmap</ToolsSelectText>
+          <ToolsSelectIconFour />
+          <ToolsSelectText>Notes</ToolsSelectText>
         </ToolsSelectBlock>
         <ToolsSelectBlock>
-          <ToolsSelectIcon />
-          <ToolsSelectText>Roadmap</ToolsSelectText>
+          <ToolsSelectIconFive />
+          <ToolsSelectText>Files</ToolsSelectText>
         </ToolsSelectBlock>
       </BlockTest>
     </ToolsContainer>

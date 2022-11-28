@@ -36,8 +36,8 @@ export const BlockTest = styled.div`
 
 export const ToolsSelectBlock = styled.div`
 &{
-display: flex;
-    flex-direction: row;
+   display: flex;
+    align-items: end;
     justify-content: flex-start;
     align-items: center;
     border-radius: 0px 8px 8px 0px;
@@ -45,40 +45,64 @@ display: flex;
     font-size: 14px;
     cursor: pointer;
     height: 51px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-right: 10px;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 148, 255);
+    color: #222222;
 }
-&::before {
-    content: " ";
-    position: absolute;
+&:hover {
     top: 0px;
     left: 0px;
     bottom: 0px;
     width: 4px;
     background: rgb(0, 148, 255);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    color: rgb(0, 148, 255);
+
 } 
 `;
 
 export const ToolsSelectIcon = styled.div`
+&{
     width: 35px;
     height: 35px;
     flex: 0 0 auto;
     margin-left: 18px;
     background: url(${img}) no-repeat;
     background-position: center;
+    fill:inherit;
+    stroke:inherit;
+    stroke-width:inherit;
+} 
+&:hover {
+    /* background-color: red; */
+    fill:#222222;
+}  
+`;
+
+export const ToolsSelectIconTwo = styled(ToolsSelectIcon)`
+    background: url(${img2}) no-repeat;
+    background-position: center;
+`;
+export const ToolsSelectIconThree = styled(ToolsSelectIcon)`
+    background: url(${img3}) no-repeat;
+    background-position: center;
+`;
+export const ToolsSelectIconFour = styled(ToolsSelectIcon)`
+    background: url(${img4}) no-repeat;
+    background-position: center;
+`;
+export const ToolsSelectIconFive = styled(ToolsSelectIcon)`
+    background: url(${img5}) no-repeat;
+    background-position: center;
 `;
 
 export const ToolsSelectText = styled.div`
-   flex: 1 1 auto;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 7px;
-    font-size: 14px;
-    letter-spacing: 0px;
-    line-height: 47px;
-    color: rgb(0, 148, 255);
+    &{
+        flex: 1 1 auto;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 7px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        line-height: 47px;
+    }
 `;
