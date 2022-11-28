@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    color: red;
     background-color: black;
     }
 `;
