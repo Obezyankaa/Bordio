@@ -1,8 +1,41 @@
 import React from 'react';
-import { ToolsContainer } from './Style';
+import {
+  ToolsContainer,
+  ToolsHeading,
+  ToolsSelectBlock,
+  ToolsSelectText,
+  BlockTest,
+  ToolsSelectIcon
+} from './Style';
 
 export default function Tools() {
   return (
-    <ToolsContainer>Tools</ToolsContainer>
+    <ToolsContainer>
+      <ToolsHeading>
+        Tools
+      </ToolsHeading>
+      <BlockTest>
+        <ToolsSelectBlock>
+          <ToolsSelectIcon />
+          <ToolsSelectText>Roadmap</ToolsSelectText>
+        </ToolsSelectBlock>
+        <ToolsSelectBlock>
+          <ToolsSelectIcon />
+          <ToolsSelectText>Roadmap</ToolsSelectText>
+        </ToolsSelectBlock>
+        <ToolsSelectBlock>
+          <ToolsSelectIcon />
+          <ToolsSelectText>Roadmap</ToolsSelectText>
+        </ToolsSelectBlock>
+        <ToolsSelectBlock>
+          <ToolsSelectIcon />
+          <ToolsSelectText>Roadmap</ToolsSelectText>
+        </ToolsSelectBlock>
+        <ToolsSelectBlock>
+          <ToolsSelectIcon />
+          <ToolsSelectText>Roadmap</ToolsSelectText>
+        </ToolsSelectBlock>
+      </BlockTest>
+    </ToolsContainer>
   );
 }
