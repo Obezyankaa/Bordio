@@ -137,6 +137,7 @@ export const FlexAddTask = styled.div`
     margin-top: 5px;
     margin-bottom: 5px;
 `;
+
 export const AddTask = styled.div`
     & {
     color: rgb(34, 34, 34);
@@ -151,10 +152,15 @@ export const AddTask = styled.div`
     border-radius: 8px;
     background: transparent;
     }
-   
      &:hover {
     background: #F5F8FA;
     }
+`;
+
+export const AddIcon = styled.div`
+    display: flex;
+    align-item: center;
+    margin-right: 10px;
 `;
 
 export const AddEvent = styled.div`
@@ -246,7 +252,9 @@ export const FormSearchProfil = styled(FormSearch)`
     color: #8C939F;
     margin: 0;
 `;
-export const FormInput = styled(InputSearch)``;
+export const FormInput = styled(InputSearch)`
+    color: #222222;
+`;
 export const FormButton = styled(ButtonSearch)``;
 
 export const UserProfilIcon = styled.svg`

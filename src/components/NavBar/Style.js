@@ -33,7 +33,7 @@ export const FormSearch = styled.form`
 `;
 
 export const InputSearch = styled.input.attrs((props) => ({
-  type: 'search',
+  // type: 'search',
 }))`
 &{
   outline: none;
@@ -43,6 +43,7 @@ export const InputSearch = styled.input.attrs((props) => ({
    height: 40px;
    padding-left: 15px;
    border: none;
+   color: white;
 } 
 `;
 
