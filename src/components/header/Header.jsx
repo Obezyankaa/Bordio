@@ -31,8 +31,12 @@ import {
   ContainerFilterMenu,
   FilterMenu,
   FlexFilterMenu,
-  OneFilterTask
-
+  OneFilterTask,
+  FormSearchProfil,
+  FormInput,
+  FormButton,
+  UserProfilIcon,
+  UserAvatar
 } from './Style';
 
 export default function Header() {
@@ -74,7 +78,12 @@ export default function Header() {
           </ContainerFilter>
         </BlockAddTasks>
         <BlockUserProfil>
-          BlockUserProfil
+          <FormSearchProfil>
+            <FormInput placeholder="Search..." />
+            <FormButton />
+          </FormSearchProfil>
+          <UserProfilIcon />
+          <UserAvatar />
         </BlockUserProfil>
       </HeaderContainer>
       {addTask ? (

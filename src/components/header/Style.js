@@ -2,6 +2,9 @@
 import styled from 'styled-components';
 import iconBTB from './img/Plus.svg';
 import iconKanban from './img/icon1.svg';
+import iconNotice from './img/Notification.svg';
+import userAvatr from './img/userAvatar.png';
+import { ButtonSearch, FormSearch, InputSearch } from '../NavBar/Style';
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -22,13 +25,11 @@ export const BlockAddTasks = styled.div`
     -webkit-box-align: center;
     align-items: center;
     padding: 0px 15px;
-    background-color: tomato;
 `;
 
-//  <<------------ BlockUserProfil ------------>>
+//  <<------------  <BlockAddTasks> ------------>>
 
 export const BlockUserProfil = styled.div`
-    background-color: yellow;
     flex: 1 1 auto;
     display: flex;
     flex-direction: row;
@@ -56,7 +57,7 @@ export const ByttonAdd = styled.button`
  font-size: 14px;
  transition: background 0.3s ease-out 0s;
  padding: 0px 15px;
- height: 38px;
+ height: 40px;
  min-width: 76px;
  cursor: pointer;
  color: rgb(255, 255, 255);
@@ -71,7 +72,7 @@ export const ByttonAdd = styled.button`
  align-items: center;
  text-align: left;
  letter-spacing: 0px;
- width: 110px;
+ width: 119px;
 } 
     &:hover {
      background: rgb(0, 118, 204);
@@ -234,4 +235,29 @@ export const OneFilterTask = styled(AddTask)`
 `;
 // << ------------- drop-down menu ------------- >>
 
+//  <<------------  <BlockAddTasks> ------------>>
+
+//  <<------------ BlockUserProfil ------------>>
+export const FormSearchProfil = styled(FormSearch)`
+    width: 180px;
+    border-radius: 2rem;
+    background-color: #F5F8FA;
+    color: #8C939F;
+    margin: 0;
+`;
+export const FormInput = styled(InputSearch)``;
+export const FormButton = styled(ButtonSearch)``;
+
+export const UserProfilIcon = styled.svg`
+    background: url(${iconNotice}) no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0px 8px 0px 20px;
+`;
+export const UserAvatar = styled.div`
+    background: url(${userAvatr}) no-repeat;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+`;
 //  <<------------ BlockUserProfil ------------>>

@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import img from './img/ProfilPhoto.png';
 import iconArrow from './img/iconArrow.svg';
+import iconButton from './img/Search.svg';
 
 export const Navbar = styled.div`
     position: absolute;
@@ -45,14 +46,16 @@ export const InputSearch = styled.input.attrs((props) => ({
 export const ButtonSearch = styled.button.attrs((props) => ({
   type: 'submit',
 }))`& {
+  background: url(${iconButton}) no-repeat;
  border: none;
-  height: 42px;
+  height: 39px;
   width: 42px;
   position: absolute;
   top: 0;
   right: 0;
   cursor: pointer;
   background-color: transparent;
+  background-position: center;
 
 }
 &:before {
