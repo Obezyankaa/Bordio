@@ -97,15 +97,25 @@ export const ListTaskHeading = styled.div`
     &:hover {
     background-color: #1d2b4d;
   } 
+  
 `;
 
 export const IconArrow = styled.span`
+  & {
     background: url(${iconArrow}) no-repeat;
     display: block;
     width: 1rem;
     height: 1rem;
     background-position: center;
     margin-right: 10px;
+  }
+    
+
+    &:active {
+        transform: rotate(180deg);
+        transition: transform .3s;
+        transform-origin: center center;
+    }
 `;
 
 export const TastBlock = styled.div`

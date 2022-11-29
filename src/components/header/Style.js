@@ -1,6 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 import iconBTB from './img/Plus.svg';
+import iconKanban from './img/icon1.svg';
 
 export const HeaderContainer = styled.header`
     width: 100%;
@@ -48,7 +49,7 @@ export const BlockButtonAdd = styled.div`
 
 export const ByttonAdd = styled.button`
    & {
-    margin: 0px;
+ margin: 0px;
  border: 0px;
  border-radius: 5px;
  outline: none;
@@ -70,7 +71,7 @@ export const ByttonAdd = styled.button`
  align-items: center;
  text-align: left;
  letter-spacing: 0px;
- width: 107px;
+ width: 110px;
 } 
     &:hover {
      background: rgb(0, 118, 204);
@@ -172,8 +173,54 @@ export const AddEvent = styled.div`
     &:hover {
     background: #F5F8FA;
     }
-    
 `;
+
+export const ContainerKanban = styled(ContainerButtonAdd)`
+`;
+export const BlockButtonKanban = styled(BlockButtonAdd)`
+`;
+export const ButtonKanban = styled(ByttonAdd)`
+   & { 
+    background: #F5F8FA;
+   }
+   &:hover {
+    background: rgb(238, 242, 245);
+    }
+`;
+export const ButtonIconKanban = styled(ButtonIcon)`
+    & {
+    background: url(${iconKanban}) no-repeat;
+    background-position: center;
+    margin-left: 10px;
+    }
+
+    &:hover {
+        transform: rotate(180deg);
+        transition: transform .3s;
+        transform-origin: center center;
+    }
+`;
+export const ButtonSpanKanban = styled(ButtonSpan)`
+    color: rgb(34, 34, 34);
+`;
+
+export const ContainerMenuKanban = styled(ContainerAddTask)`
+    left: 137px;
+`;
+export const BlockMenu = styled(BlockAddTask)`
+`;
+export const FlexMenu = styled(FlexAddTask)`
+`;
+export const OneTask = styled(AddTask)`
+`;
+
+export const ContainerFilter = styled(ContainerKanban)``;
+export const BlockButtonFilter = styled(BlockButtonKanban)``;
+export const ButtonFilter = styled(ButtonKanban)`
+    width: 97px;`;
+export const ButtonSpanFilter = styled(ButtonSpanKanban)``;
+export const ButtonIconFilter = styled(ButtonIconKanban)``;
+
 // << ------------- drop-down menu ------------- >>
 
 //  <<------------ BlockUserProfil ------------>>

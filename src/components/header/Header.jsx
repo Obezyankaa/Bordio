@@ -12,13 +12,31 @@ import {
   BlockAddTask,
   FlexAddTask,
   AddTask,
-  AddEvent
+  AddEvent,
+  ContainerKanban,
+  BlockButtonKanban,
+  ButtonKanban,
+  ButtonSpanKanban,
+  ButtonIconKanban,
+  ContainerMenuKanban,
+  BlockMenu,
+  FlexMenu,
+  OneTask,
+  //   TwoTask,
+  ContainerFilter,
+  BlockButtonFilter,
+  ButtonSpanFilter,
+  ButtonIconFilter,
+  ButtonFilter
 
 } from './Style';
 
 export default function Header() {
   const [addTask, setAddtask] = useState(false);
+  const [open, setOpen] = useState(false);
   const submitHandler = () => setAddtask(!addTask);
+  const submitHandlerTwo = () => setOpen(!open);
+
   return (
     <>
 
@@ -32,6 +50,22 @@ export default function Header() {
               </ByttonAdd>
             </BlockButtonAdd>
           </ContainerButtonAdd>
+          <ContainerKanban>
+            <BlockButtonKanban>
+              <ButtonKanban onClick={submitHandlerTwo}>
+                <ButtonSpanKanban>Kaban</ButtonSpanKanban>
+                <ButtonIconKanban />
+              </ButtonKanban>
+            </BlockButtonKanban>
+          </ContainerKanban>
+          <ContainerFilter>
+            <BlockButtonFilter>
+              <ButtonFilter>
+                <ButtonSpanFilter>Filter</ButtonSpanFilter>
+                <ButtonIconFilter />
+              </ButtonFilter>
+            </BlockButtonFilter>
+          </ContainerFilter>
         </BlockAddTasks>
         <BlockUserProfil>
           BlockUserProfil
@@ -46,6 +80,17 @@ export default function Header() {
             </FlexAddTask>
           </BlockAddTask>
         </ContainerAddTask>
+      ) : (null)}
+      {open ? (
+        <ContainerMenuKanban>
+          <BlockMenu>
+            <FlexMenu>
+              <OneTask>Board view</OneTask>
+              <OneTask>Table view</OneTask>
+              <OneTask>Kanban</OneTask>
+            </FlexMenu>
+          </BlockMenu>
+        </ContainerMenuKanban>
       ) : (null)}
     </>
 
