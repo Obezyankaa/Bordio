@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 import img from './img/ProfilPhoto.png';
@@ -34,13 +35,15 @@ export const FormSearch = styled.form`
 export const InputSearch = styled.input.attrs((props) => ({
   type: 'search',
 }))`
- outline: none;
-  background: transparent;
-  width: 100%;
-  font-size: 14px;
-  height: 40px;
-  padding-left: 15px;
-  border: none;
+&{
+  outline: none;
+   background: transparent;
+   width: 100%;
+   font-size: 14px;
+   height: 40px;
+   padding-left: 15px;
+   border: none;
+} 
 `;
 
 export const ButtonSearch = styled.button.attrs((props) => ({
@@ -72,6 +75,7 @@ export const ProfilNavbar = styled.div`
 export const ProfilSpan = styled.div`
     display: flex;
     align-items: center;
+    color: #FFFFFF;
 `;
 
 export const ProfilPhoto = styled.span`
@@ -95,6 +99,7 @@ export const ListTaskHeading = styled.div`
     font-size: 14px;
     cursor: pointer;
     padding: 15px 16px;
+    color: #FFFFFF;
 }
    
     &:hover {

@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 /* eslint-disable import/prefer-default-export */
 import styled from 'styled-components';
 import iconBTB from './img/Plus.svg';
@@ -129,8 +130,8 @@ export const BlockAddTask = styled.div`
 export const FlexAddTask = styled.div`  
     display: flex;
     flex-direction: column;
-    max-width: 157px;
-    min-width: 157px;
+    /* max-width: 157px;
+    min-width: 157px; */
     overflow: auto;
     z-index: 20;
     margin-top: 5px;

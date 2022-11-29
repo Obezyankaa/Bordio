@@ -90,8 +90,8 @@ export default function Header() {
         <ContainerAddTask>
           <BlockAddTask>
             <FlexAddTask>
-              <AddTask>Add task</AddTask>
-              <AddEvent>Add event</AddEvent>
+              <AddTask>Еask</AddTask>
+              <AddEvent>Event</AddEvent>
             </FlexAddTask>
           </BlockAddTask>
         </ContainerAddTask>
