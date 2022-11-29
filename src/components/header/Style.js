@@ -103,14 +103,14 @@ export const ButtonSpan = styled.span`
 export const ContainerAddTask = styled.div`
     position: absolute;
     left: 15px;
-    width: 157px;
+    width: 132px;
     z-index: 10;
     transform-origin: 54px 0px;
     top: 65px;
     opacity: 1;
     visibility: visible;
     transform: scale(1);
-    min-width: 137px;
+    min-width: 132px;
     min-height: auto;
     background-color: white;
     overflow-y: hidden;
@@ -203,6 +203,7 @@ export const ButtonIconKanban = styled(ButtonIcon)`
 export const ButtonSpanKanban = styled(ButtonSpan)`
     color: rgb(34, 34, 34);
 `;
+// в рамках тестового продублирую,👇 а в целом там будет другая логика, на кнопках !
 
 export const ContainerMenuKanban = styled(ContainerAddTask)`
     left: 137px;
@@ -220,7 +221,17 @@ export const ButtonFilter = styled(ButtonKanban)`
     width: 97px;`;
 export const ButtonSpanFilter = styled(ButtonSpanKanban)``;
 export const ButtonIconFilter = styled(ButtonIconKanban)``;
+// в рамках тестового продублирую,👇 а в целом там будет другая логика, на кнопках !
 
+export const ContainerFilterMenu = styled(ContainerAddTask)`
+    left: 265px;
+`;
+export const FilterMenu = styled(BlockAddTask)`
+`;
+export const FlexFilterMenu = styled(FlexAddTask)`
+`;
+export const OneFilterTask = styled(AddTask)`
+`;
 // << ------------- drop-down menu ------------- >>
 
 //  <<------------ BlockUserProfil ------------>>

@@ -27,15 +27,21 @@ import {
   BlockButtonFilter,
   ButtonSpanFilter,
   ButtonIconFilter,
-  ButtonFilter
+  ButtonFilter,
+  ContainerFilterMenu,
+  FilterMenu,
+  FlexFilterMenu,
+  OneFilterTask
 
 } from './Style';
 
 export default function Header() {
   const [addTask, setAddtask] = useState(false);
   const [open, setOpen] = useState(false);
+  const [filterbtn, setFilterbtn] = useState(false);
   const submitHandler = () => setAddtask(!addTask);
   const submitHandlerTwo = () => setOpen(!open);
+  const submitHandlerThree = () => setFilterbtn(!filterbtn);
 
   return (
     <>
@@ -60,7 +66,7 @@ export default function Header() {
           </ContainerKanban>
           <ContainerFilter>
             <BlockButtonFilter>
-              <ButtonFilter>
+              <ButtonFilter onClick={submitHandlerThree}>
                 <ButtonSpanFilter>Filter</ButtonSpanFilter>
                 <ButtonIconFilter />
               </ButtonFilter>
@@ -91,6 +97,17 @@ export default function Header() {
             </FlexMenu>
           </BlockMenu>
         </ContainerMenuKanban>
+      ) : (null)}
+      {filterbtn ? (
+        <ContainerFilterMenu>
+          <FilterMenu>
+            <FlexFilterMenu>
+              <OneFilterTask>2022</OneFilterTask>
+              <OneFilterTask>2023</OneFilterTask>
+              <OneFilterTask>2024</OneFilterTask>
+            </FlexFilterMenu>
+          </FilterMenu>
+        </ContainerFilterMenu>
       ) : (null)}
     </>
 
