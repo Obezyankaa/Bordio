@@ -19,7 +19,6 @@ import {
 export default function Header() {
   const [addTask, setAddtask] = useState(false);
   const submitHandler = () => setAddtask(!addTask);
-  console.log(addTask);
   return (
     <>
 

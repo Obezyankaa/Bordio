@@ -135,20 +135,7 @@ export const FlexAddTask = styled.div`
     margin-bottom: 5px;
 `;
 export const AddTask = styled.div`
-   color: rgb(34, 34, 34);
-    cursor: pointer;
-    line-height: 16px;
-    padding: 10px 15px 10px 12px;
-    font-size: 14px;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0px 8px;
-    border-radius: 8px;
-    background: transparent;
-`;
-
-export const AddEvent = styled.div`
+    & {
     color: rgb(34, 34, 34);
     cursor: pointer;
     line-height: 16px;
@@ -160,6 +147,31 @@ export const AddEvent = styled.div`
     margin: 0px 8px;
     border-radius: 8px;
     background: transparent;
+    }
+   
+     &:hover {
+    background: #F5F8FA;
+    }
+`;
+
+export const AddEvent = styled.div`
+   & {
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+    line-height: 16px;
+    padding: 10px 15px 10px 12px;
+    font-size: 14px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px 8px;
+    border-radius: 8px;
+    background: transparent;
+   }
+   
+    &:hover {
+    background: #F5F8FA;
+    }
     
 `;
 // << ------------- drop-down menu ------------- >>
