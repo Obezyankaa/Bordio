@@ -10,12 +10,17 @@ import Tools from './components/ToolsBlock/Tools';
 
 function App() {
   const [text, setText] = useState('');
+  const [task, setTask] = useState(false);
+  const [addTask, setAddtask] = useState(false);
+  const submitHandler = () => setAddtask(!addTask);
   const dispatch = useDispatch();
-
+  const submitHandlerAddTask = () => setTask(!task);
   const handleAction = () => {
     if (text.trim().length) {
       dispatch(addTodo({ text }));
       setText('');
+      setAddtask(false);
+      setTask(false);
     }
   };
   return (
@@ -23,7 +28,7 @@ function App() {
       <GlobalStyles />
       <NavBar />
       <Tools />
-      <Main handleAction={handleAction} text={text} setText={setText} />
+      <Main submitHandler={submitHandler} setAddtask={setAddtask} addTask={addTask} task={task} submitHandlerAddTask={submitHandlerAddTask} handleAction={handleAction} text={text} setText={setText} />
     </>
   );
 }

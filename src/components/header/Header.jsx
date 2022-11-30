@@ -41,17 +41,14 @@ import {
   UserAvatar
 } from './Style';
 
-export default function Header() {
-  const [addTask, setAddtask] = useState(false);
+export default function Header({addTask, setAddtask, submitHandler, submitHandlerAddTask }) {
   const [open, setOpen] = useState(false);
   const [filterbtn, setFilterbtn] = useState(false);
-  const submitHandler = () => setAddtask(!addTask);
+  
   const submitHandlerTwo = () => setOpen(!open);
   const submitHandlerThree = () => setFilterbtn(!filterbtn);
-
   return (
     <>
-
       <HeaderContainer>
         <BlockAddTasks>
           <ContainerButtonAdd>
@@ -92,7 +89,7 @@ export default function Header() {
         <ContainerAddTask>
           <BlockAddTask>
             <FlexAddTask>
-              <AddTask>
+              <AddTask onClick={submitHandlerAddTask}>
                 <AddIcon>
                   <svg data-name="\u0421\u0433\u0440\u0443\u043F\u043F\u0438\u0440\u043E\u0432\u0430\u0442\u044C 1463" width="17" height="17" viewBox="0 0 17 17" fill="#96A2AC">
                     <path data-name="\u041A\u043E\u043D\u0442\u0443\u0440 1387" d="M12.885 5.09a.46.46 0 00-.644-.008.071.071 0 01-.01.012l-5.042 5.849-2.431-2.415a.457.457 0 00-.646.647l2.753 2.737a.464.464 0 00.326.134.459.459 0 00.324-.134l5.366-6.171a.453.453 0 00.01-.645z" />

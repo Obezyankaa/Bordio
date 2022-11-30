@@ -4,17 +4,18 @@ import NewTodoForm from '../NewTodoForm';
 import TodoList from '../TodoList';
 import { MainContainer } from './Style';
 
-export default function Main({ text, setText, handleAction }) {
+export default function Main({ addTask, setAddtask, submitHandler, task, submitHandlerAddTask, text, setText, handleAction }) {
   return (
     <MainContainer>
-      <Header />
+      <Header setAddtask={setAddtask} addTask={addTask} submitHandler={submitHandler} submitHandlerAddTask={submitHandlerAddTask} />
       <h1>привет</h1>
       <div className="App">
-        <NewTodoForm
+        {task ? (<NewTodoForm
           value={text}
           updateText={setText}
-          handleAction={handleAction}
-        />
+          handleAction={handleAction} 
+        /> 
+          ) : (null)}
         <TodoList />
       </div>
     </MainContainer>
