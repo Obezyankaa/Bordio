@@ -53,7 +53,6 @@ module.exports = {
     'eslint-disable-next-line': 0,
     'react/jsx-props-no-spreading': 0,
     camelcase: 'off',
-    'no-param-reassign': 0,
     // 'arrow-body-style':off,
   },
 };

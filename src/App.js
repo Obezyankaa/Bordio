@@ -5,7 +5,7 @@ import Main from './components/main/Main';
 import NavBar from './components/NavBar/NavBar';
 import { addTodo } from './components/store/todoSlice';
 import { GlobalStyles } from './components/Style/GlobalStyle';
-import TodoList from './components/TodoList';
+import TodoList from './components/TodoTask/TodoList';
 import Tools from './components/ToolsBlock/Tools';
 
 function App() {
