@@ -9,6 +9,13 @@ module.exports = {
   ],
   overrides: [
   ],
+  'no-param-reassign': ['error', {
+    props: true,
+    ignorePropertyModificationsFor: [
+      'state',
+    ]
+  }],
+
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -46,6 +53,7 @@ module.exports = {
     'eslint-disable-next-line': 0,
     'react/jsx-props-no-spreading': 0,
     camelcase: 'off',
+    'no-param-reassign': 0,
     // 'arrow-body-style':off,
   },
 };

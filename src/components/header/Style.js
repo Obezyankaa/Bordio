@@ -159,7 +159,7 @@ export const AddTask = styled.div`
 
 export const AddIcon = styled.div`
     display: flex;
-    align-item: center;
+    align-items: center;
     margin-right: 10px;
 `;
 

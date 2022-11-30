@@ -1,4 +1,6 @@
+/* eslint-disable max-len */
 import React, { useState } from 'react';
+// В рамках тестового задания для быстроты действий я импортировал все дочерние компоненты хедера сюда, в реальном проекте можно было бы раскидать по папкам и уменьшить кол-во импортов.
 import {
   HeaderContainer,
   BlockAddTasks,
