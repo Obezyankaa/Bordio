@@ -41,10 +41,12 @@ import {
   UserAvatar
 } from './Style';
 
-export default function Header({addTask, setAddtask, submitHandler, submitHandlerAddTask }) {
+export default function Header({
+  addTask, setAddtask, submitHandler, submitHandlerAddTask
+}) {
   const [open, setOpen] = useState(false);
   const [filterbtn, setFilterbtn] = useState(false);
-  
+
   const submitHandlerTwo = () => setOpen(!open);
   const submitHandlerThree = () => setFilterbtn(!filterbtn);
   return (

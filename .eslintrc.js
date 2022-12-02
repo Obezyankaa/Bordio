@@ -9,12 +9,12 @@ module.exports = {
   ],
   overrides: [
   ],
-  'no-param-reassign': ['error', {
-    props: true,
-    ignorePropertyModificationsFor: [
-      'state',
-    ]
-  }],
+  // 'no-param-reassign': ['error', {
+  //   props: true,
+  //   ignorePropertyModificationsFor: [
+  //     'state',
+  //   ]
+  // }],
 
   parserOptions: {
     ecmaVersion: 'latest',

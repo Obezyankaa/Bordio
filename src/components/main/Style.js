@@ -10,4 +10,5 @@ export const MainContainer = styled.main`
     height: 100%;
     width: calc(100% - 374px);
     transform: translateX(374px) translateZ(0px);
+    overflow: scroll;
 `;

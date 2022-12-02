@@ -1,5 +1,6 @@
-import React from 'react'
-import { NewTodoButton,NewTodoInput,NewTodoform } from './Style';
+/* eslint-disable max-len */
+import React from 'react';
+import { NewTodoButton, NewTodoInput, NewTodoform } from './Style';
 import './style.css';
 
 export default function NewTodoForm({ value, updateText, handleAction }) {
@@ -7,14 +8,13 @@ export default function NewTodoForm({ value, updateText, handleAction }) {
     <label className="newtodo__label">
       <NewTodoform>
         <NewTodoInput
-        value={value}
-        onChange={(e) => updateText(e.target.value)}
+          value={value}
+          onChange={(e) => updateText(e.target.value)}
         />
         <NewTodoButton onClick={handleAction}>Add Task</NewTodoButton>
 
       </NewTodoform>
-    
-     
+
       {/* <input
         value={value}
         onChange={(e) => updateText(e.target.value)}
@@ -25,4 +25,3 @@ export default function NewTodoForm({ value, updateText, handleAction }) {
     </label>
   );
 }
-
