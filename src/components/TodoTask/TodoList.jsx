@@ -79,21 +79,25 @@ export default function TodoList() {
             {board.title}
             <div className="TodoList__length">{board.items.length}</div>
           </div>
-          {board.items?.map((item) => (
-            <div
-              style={{ backgroundColor: item.color.split('.').splice(0, 1).join('') }}
-              className="TodoItem__Item"
-              onDragOver={(e) => dragOverHandler(e)}
-              onDragLeave={(e) => dragLeaveHandler(e)}
-              onDragStart={(e) => dragStartHandler(e, board, item)}
-              onDragEnd={(e) => dragEndHandler(e)}
-              onDrop={(e) => dropHandler(e, board, item)}
-              draggable
-              key={item.id}
-            >
-              {item.text}
-            </div>
-          ))}
+          <div className="TodoList__block__item">
+
+            {board.items?.map((item) => (
+              <div
+                style={{ backgroundColor: item.color.split('.').splice(0, 1).join('') }}
+                className="TodoItem__Item"
+                onDragOver={(e) => dragOverHandler(e)}
+                onDragLeave={(e) => dragLeaveHandler(e)}
+                onDragStart={(e) => dragStartHandler(e, board, item)}
+                onDragEnd={(e) => dragEndHandler(e)}
+                onDrop={(e) => dropHandler(e, board, item)}
+                draggable
+                key={item.id}
+              >
+                {item.text}
+              </div>
+            ))}
+          </div>
+
         </div>
       ))}
     </div>

@@ -12,9 +12,8 @@
 }
 
 .TodoList__list {
-    padding: 10px;
     width: 254px;
-    background-color: rgb(red, green, blue);
+    border-right: 1px solid #F3F3F3;
 }
 
 .TodoItem__Item {
@@ -29,7 +28,7 @@
     cursor: pointer;
     box-sizing: border-box;
     transform: translate(0px, 0px);
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .TodoItem__block {
@@ -52,7 +51,6 @@
 
 .TodoLict__container {
     display: flex;
-    justify-content: space-around;
 }
 
 .TodoList__title {
@@ -62,7 +60,7 @@
     font-size: 14px;
     font-weight: 500;
     color: rgb(34, 34, 34);
-    padding: 20px;
+    padding: 27px 0px 15px 0px;
 }
 
 .TodoList__length {
@@ -75,4 +73,9 @@
     border-radius: 100px;
     color: #8C939F;
     margin-left: 10px;
+}
+
+.TodoList__block__item{
+    border-top: 1px solid #F3F3F3;
+    padding-top: 29px;
 }
