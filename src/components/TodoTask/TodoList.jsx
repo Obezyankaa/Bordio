@@ -9,6 +9,7 @@ export default function TodoList() {
   const todos = useSelector((state) => state.todos.todos);
   const [boards, setBords] = useState(null);
 
+  console.log(boards);
   useEffect(() => {
     setBords([
       { id: 1, title: 'NewTask', items: [...todos] },
@@ -18,7 +19,6 @@ export default function TodoList() {
     ]);
   }, [todos]);
 
-  console.log('boards--->>', boards);
   const [currentBoard, setCurrentBoard] = useState(null);
   const [currentItem, setCurrentItem] = useState(null);
 

@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import './App.css';
