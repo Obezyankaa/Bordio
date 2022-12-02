@@ -8,7 +8,6 @@ export default function Main({ addTask, setAddtask, submitHandler, task, submitH
   return (
     <MainContainer>
       <Header setAddtask={setAddtask} addTask={addTask} submitHandler={submitHandler} submitHandlerAddTask={submitHandlerAddTask} />
-      <h1>Main</h1>
       <div className="App">
         {task ? (<NewTodoForm
           value={text}

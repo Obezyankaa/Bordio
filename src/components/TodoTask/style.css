@@ -53,3 +53,25 @@
     display: flex;
     justify-content: space-around;
 }
+
+.TodoList__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(34, 34, 34);
+    padding: 20px;
+}
+
+.TodoList__length {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 20px;
+    background: #E8EBEF;
+    border-radius: 100px;
+    color: #8C939F;
+    margin-left: 10px;
+}
