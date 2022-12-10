@@ -56,8 +56,10 @@ export const ToolsSelectBlock = styled.div`
     width: 4px;
     background: rgb(0, 148, 255);
     color: rgb(0, 148, 255);
-
 } 
+&:active {
+    background-color: white;
+}
 `;
 
 export const ToolsSelectIcon = styled.div`

@@ -9,7 +9,6 @@ export default function TodoList() {
   const todos = useSelector((state) => state.todos.todos);
   const [boards, setBords] = useState(null);
 
-  console.log(boards);
   useEffect(() => {
     setBords([
       { id: 1, title: 'NewTask', items: [...todos] },
